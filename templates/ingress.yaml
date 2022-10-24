@@ -1,3 +1,4 @@
+#Client Service ( Front End )
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -23,6 +24,7 @@ spec:
       - {{ .Values.hostClient }}
     secretName: ofa-tls
 ---
+#Server Service ( Backend )
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
